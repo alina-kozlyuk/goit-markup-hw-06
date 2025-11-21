@@ -440,123 +440,64 @@
     <!-- #endregion footer -->
 
     <!-- #region backdrop -->
- 
-    <!-- <div class="backdrop hide-popup">
-        <div class="popup-review">
-           <p class="popup-title">Leave your contacts and we will call you back</p>
-           <button class="close-popup" type="button">
-             <svg class="close-popup-icon" width="8" height="8">
-             <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-        </button>
-    
-           <form>
-                <div class="form-field-warpper">
-                    <label class="lable-field" for="username">Name</label>
-                    <div class="field-wrapper">
-                        <input class="text-field" type="text" id="username" name="username">
-                        <svg class="field-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-name"></use>
-                        </svg>
-                    </div>
-                </div>
 
-                <div class="form-field-warpper">
-                    <label class="lable-field" for="usertel">Phone</label>
-                    <div class="field-wrapper">
-                        <input class="text-field" type="tel" id="usertel" name="usertel">
-                        <svg class="field-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-
-                <div class="form-field-warpper">
-                    <label class="lable-field" for="useremail">Email</label>
-                    <div class="field-wrapper">
-                        <input class="text-field" type="email" id="useremail" name="useremail">
-                        <svg class="field-icon" width="18" height="18">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                 </div>
-
-                 <div class="form-field-warpper">
-                    <label class="lable-field" for="comment">Comment</label>
-                    <textarea class="comment-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
-                 </div>
-
-                 <div class="form-field-warpper">
-                    <input class="policy-checkbox visually-hidden" type="checkbox" id="policy" name="policy" value="true">
-                    <label for="policy" class="policy-lable" >
-                        <span class="custom-checkbox">
-                            <svg class="" width="8" height="10">
-                                <use href="./images/icons.svg#icon-check-mark"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the <a href="#" class="accent policy-link">Privacy Policy</a></label>
-                 </div>
-
-                <button class="send-button" type="submit">Send</button>
-           </form> -->
-
-    <div class="mdl-backdrop">
-        <div class="mdl-window">
-            <button type="button" class="mdl-btn-close">
-                <svg class="mdl-icon-close" width="8" height="8">
+    <div class="modal-backdrop hide-backdrop">
+        <div class="modal-window">
+            <button type="button" class="modal-button-close">
+                <svg class="modal-icon-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
     
-            <p class="mdl-text">Leave your contacts and we will call you back</p>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
     
-            <form class="mdl-form">
+            <form class="modal-form">
     
-                <div class="mdl-field">
-                    <label for="user-name" class="mdl-label">Name</label>
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Name</label>
     
-                    <div class="mdl-input-wrap">
-                        <input id="user-name" name="user-name" type="text" class="mdl-input" />
-                        <svg class="mdl-input-icon" width="18" height="24">
+                    <div class="modal-input-wrap">
+                        <input id="user-name" name="user-name" type="text" class="modal-input" />
+                        <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
                     </div>
                 </div>
     
-                <div class="mdl-field">
-                    <label for="user-phone" class="mdl-label">Phone</label>
+                <div class="modal-field">
+                    <label for="user-phone" class="modal-label">Phone</label>
     
-                    <div class="mdl-input-wrap">
-                        <input id="user-phone" name="user-phone" type="text" class="mdl-input" />
-                        <svg class="mdl-input-icon" width="18" height="24">
+                    <div class="modal-input-wrap">
+                        <input id="user-phone" name="user-phone" type="text" class="modal-input" />
+                        <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
     
-                <div class="mdl-field">
-                    <label for="user-email" class="mdl-label">Email</label>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">Email</label>
     
-                    <div class="mdl-input-wrap">
-                        <input id="user-email" name="user-email" type="text" class="mdl-input" />
-                        <svg class="mdl-input-icon" width="18" height="24">
+                    <div class="modal-input-wrap">
+                        <input id="user-email" name="user-email" type="text" class="modal-input" />
+                        <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
     
-                <div class="mdl-area">
-                    <label for="user-comment" class="mdl-label">Comment</label>
+                <div class="modal-area">
+                    <label for="user-comment" class="modal-label">Comment</label>
                     <textarea id="user-comment" name="user-comment" placeholder="Text input"
-                        class="mdl-textarea"></textarea>
+                        class="modal-textarea"></textarea>
                 </div>
     
-                <div class="mdl-privacy">
+                <div class="modal-privacy">
                     <input id="user-privacy" type="checkbox" value="true" name="user-privacy"
-                        class="mdl-chk visually-hidden" />
-                    <label for="user-privacy" class="mdl-privacy-label">
-                        <span class="mdl-chk-box"> 
-                            <svg class="mdl-chk-box-icon" width="10" height="8">
+                        class="modal-check visually-hidden" />
+                    <label for="user-privacy" class="modal-privacy-label">
+                        <span class="modal-check-box"> 
+                            <svg class="modal-checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check-mark"></use>
                             </svg>
                         </span>
@@ -566,15 +507,12 @@
                    
                 </div>
 
-                <button class="send-btn" type="submit">Send</button>
+                <button class="modal-send-button" type="submit">Send</button>
     
             </form>
     
         </div>
     </div>
-
-
-       
 
 <!-- #endregion backdrop -->
 
